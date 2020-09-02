@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo > img {
+    width: 50px;
+  }
+
+  header {
+      text-align: center;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .navbar {
+      background-color: gray;
+  }
+
+  .hamburger {
+      text-align: right;
+      color: white;
+      padding-right: 10px; 
+  }
+
+  main {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      
+  }
+
+  .product {
+      margin: auto;
+      margin-top: 5px;
+      border: 2px solid lightgray;
+      border-radius: 10px;
+      width: 57%;
+      text-align: center;
+  }
+
+  p {
+      text-align: initial;
+      padding-left: 1%;
+  }
+
+  #curry {
+      display: none;
+  }
+
+  footer {
+      display: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        
+    }
+
+    .logo {
+        margin-top: 2.5%;
+    }
+
+    .product {
+        width: 80%;
+    }
+
+    #curry {
+        display: block;
+    }
+
+    footer {
+        display: block
+    }
+
+    .social {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+  }
+
+  @media (min-width: 1025px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .navbar {
+        padding: 2px 2px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu > li {
+        list-style-type: none;
+        color: white;
+        padding-right: 25px;
+    }
+
+    .logo {
+        width: 35%;
+        margin-top: 1.5%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row; 
+        height: 250px;
+    }
+
+    .product {
+        width: 30%;
+        height: 100%;
+    }
+
+    #curry {
+        display: block;
+    }
+
+    footer {
+        display: block
+    }
+
+    .social {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+  }
